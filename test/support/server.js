@@ -9,5 +9,5 @@ const server = http.createServer((req, res) => {
 (() => new Promise(resolve => {
   setTimeout(
     () => resolve(server.listen(process.env.TEST_SERVER_STARTER_PORT ? process.env.TEST_SERVER_STARTER_PORT : { fd: 3 })),
-    14000)
+    1000)
 }))()
